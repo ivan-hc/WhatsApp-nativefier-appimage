@@ -3,7 +3,7 @@
 APP=whatsapp-nativefier
 mkdir tmp
 cd ./tmp
-wget https://github.com/AppImage/AppImageKit/releases/download/continuous/appimagetool-$(uname -m).AppImage -O appimagetool
+wget -q $(wget -q https://api.github.com/repos/probonopd/go-appimage/releases -O - | grep -v zsync | grep -i continuous | grep -i appimagetool | grep -i x86_64 | grep browser_download_url | cut -d '"' -f 4 | head -1) -O appimagetool
 chmod a+x ./appimagetool
 
 VERSION=$(wget -q https://api.github.com/repos/frealgagu/archlinux.whatsapp-nativefier/releases/latest -O - | grep -E tag_name | awk -F '[""]' '{print $4}')
@@ -22,6 +22,6 @@ export UNION_PRELOAD="${HERE}"
 exec "${HERE}"/WhatsApp "$@"
 EOF
 chmod a+x ./$APP.AppDir/AppRun
-ARCH=x86_64 ./appimagetool -n ./$APP.AppDir
+ARCH=x86_64 VERSION=$(./appimagetool -v | grep -o '[[:digit:]]*') ./appimagetool -s ./$APP.AppDir
 cd ..
 mv ./tmp/*.AppImage ./Whatsapp-nativefier-$VERSION-x86_64.AppImage
