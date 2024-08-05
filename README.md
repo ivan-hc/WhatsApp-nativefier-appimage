@@ -1,6 +1,10 @@
 # WhatsApp-nativefier-appimage
 AppImage of WhatsApp Nativefier from AUR.
 
+SOURCES:
+- https://aur.archlinux.org/packages/whatsapp-nativefier
+- https://github.com/frealgagu/archlinux.whatsapp-nativefier
+
 ------------------------------------------------------------------------
 
 ## Install and update it with ease
