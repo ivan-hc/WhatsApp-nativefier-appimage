@@ -1,2 +1,2 @@
 https://github.com/ivan-hc/WhatsApp-nativefier-appimage/releases/download/continuous/Whatsapp-nativefier-2.3000.1019818867-1-x86_64.AppImage
-Thu Jun 12 01:47:39 UTC 2025
+Fri Jun 13 01:48:33 UTC 2025
