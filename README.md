@@ -1,3 +1,9 @@
+----------------------------
+
+*This repository has been archived on November 19, 2025, because upstream has removed the AUR package this AppImage was based on.*
+
+----------------------------
+
 # WhatsApp-nativefier-appimage
 AppImage of WhatsApp Nativefier from AUR.
 
