@@ -12,8 +12,8 @@ wget $URL
 tar xf ./*.tar.zst
 mkdir $APP.AppDir
 mv ./opt/$APP/* ./$APP.AppDir/
-wget https://aur.archlinux.org/cgit/aur.git/plain/whatsapp-nativefier.png?h=whatsapp-nativefier -O ./$APP.AppDir/$APP.png
-wget https://aur.archlinux.org/cgit/aur.git/plain/whatsapp-nativefier.desktop?h=whatsapp-nativefier -O ./$APP.AppDir/$APP.desktop
+wget https://raw.githubusercontent.com/frealgagu/archlinux.whatsapp-nativefier/refs/heads/master/whatsapp-nativefier.png -O ./$APP.AppDir/$APP.png
+wget https://raw.githubusercontent.com/frealgagu/archlinux.whatsapp-nativefier/refs/heads/master/whatsapp-nativefier.desktop -O ./$APP.AppDir/$APP.desktop
 
 cat >> ./$APP.AppDir/AppRun << 'EOF'
 #!/bin/sh
